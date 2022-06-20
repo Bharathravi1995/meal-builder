@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero {
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+  font-weight: 300;
+  background-color: #80817f;
+  color: #fff;
+  /* background: linear-gradient(150deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url(/assets/mealbanner.jpeg) top center/cover no-repeat fixed; */
+  background-image: url(/assets/meal.jpeg);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.button--inline {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+.button--primary {
+  border: 1px solid #3d5335;
+  background-color: #fff;
+  color: #3d5335;
+  padding: 1rem 1.25rem;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  transition: 0.5s ease;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin: 0 auto;
+  width: auto;
+  max-width: 80%;
+  border-radius: 5px;
+}
+
+nav {
+  position: sticky;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  z-index: 10;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  width: 100%;
+  min-height: 10%;
+  background-color: #dfa375;
+  color: #542a08;
+}
+
+nav a {
+  color: #4f1a08;
+  font-weight: 400;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.avatar h3 {
+  margin: 0;
+}
+.meal__image {
+  width: 20rem;
+  height: 20rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.ingredients {
+  grid-area: ingredients;
+}
+
+.ingredients__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0;
+}
+
+.ingredients__list > li {
+  padding: 2px;
+  list-style-position: inside;
+}
+.procedure {
+  grid-area: procedure;
+  font-size: 1rem;
+}
+
+.procedure__list {
+  text-align: justify;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "avatar procedure"
+    "ingredients procedure";
+  gap: 10px;
+  padding: 10px;
+  background: linear-gradient(to top left, #1b2417, rgba(0, 0, 0, 0.4));
+  padding: 1rem 2rem;
+  grid-template-rows: 0.4fr 0.6fr;
+  grid-template-columns: 0.5fr 0.5fr;
+  color: white;
+  background-color: #dfa375;
+  min-height: 90%;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 2px 0;
+  font-size: 30px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.grid-area {
+  padding: 0.5rem 0;
+}
