@@ -173,3 +173,7 @@ nav a {
   transform: translateX(-50%);
   color: white;
 }
+
+.footer-msg a {
+  color: white;
+}
